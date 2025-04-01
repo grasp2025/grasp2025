@@ -370,10 +370,9 @@ button:focus,
 .jumbotron-image {
     background: url("../img/turkiye-2.avif");
     height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: top center; /* anchor the top, crop bottom if needed */
     background-repeat: no-repeat;
-    background-position: center center;
+    height: 100vh; /* or your desired height */
 }
 
 .jumbotron .content {
@@ -389,6 +388,7 @@ button:focus,
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     backdrop-filter: blur(1px);
+    padding-top: 180px;
 }
 
 .jumbotron .content h1 {
